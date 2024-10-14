@@ -1,9 +1,16 @@
-import React from 'react'
+"use client";
 
-const page = () => {
+import LandingPage from "@/components/LandingPage";
+import Navbar from "@/components/Navbar";
+import { ThemeProvider } from "@/components/ThemeProvider";
+
+const App = () => {
   return (
-    <div>page</div>
-  )
-}
+    <ThemeProvider>
+      {/* <Navbar /> */}
+      <LandingPage />
+    </ThemeProvider>
+  );
+};
 
-export default page
+export default App;
